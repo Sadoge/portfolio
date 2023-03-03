@@ -1,0 +1,47 @@
+name: portfolio
+description: A portfolio website for myself
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.4.0
+  url_launcher: ^6.1.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: RobotoMono
+      fonts:
+        - asset: assets/fonts/roboto/RobotoMono-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/roboto/RobotoMono-Light.ttf
+          weight: 300
+        - asset: assets/fonts/roboto/RobotoMono-Thin.ttf
+          weight: 100  
+    - family: SourceSansPro
+      fonts:
+        - asset: assets/fonts/sourcesans/SourceSansPro-Regular.ttf
+        - asset: assets/fonts/sourcesans/SourceSansPro-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/sourcesans/SourceSansPro-Black.ttf
+          weight: 800  

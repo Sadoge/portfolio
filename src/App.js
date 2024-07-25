@@ -122,7 +122,7 @@ const App = () => {
                 <Text fontSize="lg" mb={4}>
                   I'm a dedicated software developer specializing in Flutter. I transform ideas into engaging, high-quality mobile applications that provide exceptional user experiences. Let's work together to bring your vision to life.
                 </Text>
-                <Button colorScheme="brand" mt={4} onClick={() => window.open('path/to/your/resume.pdf', '_blank')}>
+                <Button colorScheme="brand" mt={4} onClick={() => window.open('resume.pdf', '_blank')}>
                   Download Resume
                 </Button>
               </Box>

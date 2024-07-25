@@ -1,17 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import { createRoot } from 'react-dom/client';
+import { ChakraProvider } from '@chakra-ui/react';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import theme from './theme';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Find the root element in your HTML
+const rootElement = document.getElementById('root');
+
+// Create a root
+const root = createRoot(rootElement);
+
+// Render the App component inside the ChakraProvider with the custom theme
 root.render(
-  <React.StrictMode>
+  <ChakraProvider theme={theme}>
     <App />
-  </React.StrictMode>
+  </ChakraProvider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

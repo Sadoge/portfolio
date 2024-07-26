@@ -103,10 +103,10 @@ const App = () => {
               onClick={toggleColorMode}
               colorScheme="brand"
             />
-            <Link href="https://github.com" isExternal>
+            <Link href="https://github.com/Sadoge" isExternal>
               <IconButton icon={<FaGithub />} colorScheme="brand" />
             </Link>
-            <Link href="https://linkedin.com" isExternal>
+            <Link href="https://linkedin.com/in/sam-smets-90336471" isExternal>
               <IconButton icon={<FaLinkedin />} colorScheme="brand" />
             </Link>
           </HStack>
